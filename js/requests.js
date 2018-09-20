@@ -11,7 +11,7 @@ export function getCities() {
 }
 
 export function getMeetup(name) {
-  return fetch(`https://cors-anywhere.herokuapp.com/https://api.meetup.com/2/open_events?&sign=true&photo-host=public&country=rs&city=${name}&page=20&key=YOURAPIKEY
+  return fetch(`https://cors-anywhere.herokuapp.com/https://api.meetup.com/2/open_events?&sign=true&photo-host=public&country=rs&city=${name}&page=20&key=YOURKEYHERE
   `).then(res => {
     if (res.status === 200) {
       return res.json();
